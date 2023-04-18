@@ -19,6 +19,10 @@ namespace DesignPatterns.Structural
             House securityHouse = new HouseSecurityDecorator(myhouse);
 
             securityHouse.Renovation();
+
+            House securityAndFloowHeatHouse = new HouseFloowHeatDecorator(securityHouse);
+
+            securityAndFloowHeatHouse.Renovation();
         }
     }
 
@@ -79,5 +83,18 @@ namespace DesignPatterns.Structural
             base.Renovation();
             Console.WriteLine("增加安全系统");
         }
+    }
+
+    public sealed class HouseFloowHeatDecorator : DecorationStrategy
+    {
+        public HouseFloowHeatDecorator(House house) : base(house)
+        {
+        }
+        public override void Renovation()
+        {
+            base.Renovation();
+            Console.WriteLine("增加安全系统");
+        }
+
     }
 }
