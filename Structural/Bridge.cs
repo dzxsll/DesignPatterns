@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Structural
 {
-    //桥接模式：为了因对多维度的属性组合，而产生的抽象和实现的模式。
+    //桥接模式：为了应对多维度的属性组合，而产生的抽象和实现的模式。
     //比如：圆球和正方体，红色和蓝色，两两组合就会有四种类型，如果在代码中，如果一种属性的种类越多，那么类就越庞大。
 
     class Bridge
