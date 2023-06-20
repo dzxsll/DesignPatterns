@@ -56,9 +56,10 @@ namespace DesignPatterns.Structural
 
     //使用享元的类    
     class Tree
-    {
-        //通过组合的方式，把本质的，不容易变化的属性独立出来，可以独立创建，可以复用。       
+    {          
         public int x, y;
+
+        //通过组合的方式，把本质的，不容易变化的属性独立出来，可以独立创建，可以复用。     
         public TreeType type;
 
         public Tree(int x, int y, TreeType type)

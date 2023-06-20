@@ -16,7 +16,7 @@ namespace DesignPatterns.Structural
 
     class Client
     {
-        //无外观模式瞎的耦合情况
+        //无外观模式下的耦合情况
         public void buy()
         {
             AuthoriationSystemA authoriationSystemA = new AuthoriationSystemA();

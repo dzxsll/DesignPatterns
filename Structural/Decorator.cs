@@ -93,7 +93,7 @@ namespace DesignPatterns.Structural
         public override void Renovation()
         {
             base.Renovation();
-            Console.WriteLine("增加安全系统");
+            Console.WriteLine("增加地热系统");
         }
 
     }
